@@ -21,7 +21,7 @@ const Catalog = () => {
       <div className="hidden relative container mx-auto px-[36px] z-10 sm:block sm:h-[500px] md:h-[650px] lg:h-[800px] xl:h-[925px] 2xl:h-[1050px] overflow-visible">
         <Image
           src={character}
-          alt="Ghost"
+          alt="Ghost character"
           className="absolute bottom-[20px] right-[30%] object-contain md:bottom-[45px] lg:bottom-[35px] 2xl:bottom-0 xl:right-[25%]"
         />
       </div>
@@ -30,7 +30,11 @@ const Catalog = () => {
       <div className="relative container mx-auto px-[36px] sm:absolute sm:top-0 sm:bottom-0 sm:left-0 sm:right-0 sm:flex sm:items-center sm:justify-end">
         {/* Character image */}
         <div className="absolute bottom-0 right-[36px] w-[500px] -translate-x-[105px] sm:hidden">
-          <Image src={character} alt="Ghost" className="object-contain" />
+          <Image
+            src={character}
+            alt="Ghost Character"
+            className="object-contain"
+          />
         </div>
 
         {/* Flex container for text */}
