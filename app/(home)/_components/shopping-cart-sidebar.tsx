@@ -124,7 +124,7 @@ const CartSidebar: React.FC<CartSidebarProps> = ({ children }) => {
         <SheetContent className="2xl:w-[550px] xl:w-[500px] lg:w-[500px] md:w-[500px] sm:w-[450px] w-full shopping-cart-sidebar-main-div">
           <SheetHeader className="border-b-[1px] border-white pb-4 mb-12">
             <div className="flex items-center gap-2">
-              <SheetTitle className="font-primaryFont text-white text-[17px] font-medium">
+              <SheetTitle className="font-primaryFont text-white text-[17px] font-regular">
                 Shopping Cart
               </SheetTitle>
 
@@ -136,7 +136,7 @@ const CartSidebar: React.FC<CartSidebarProps> = ({ children }) => {
 
               <Image
                 src={cartIcon}
-                alt="Not found background"
+                alt="Not found background image"
                 className="w-[20px] h-[20px]"
               />
             </div>
@@ -148,7 +148,7 @@ const CartSidebar: React.FC<CartSidebarProps> = ({ children }) => {
                 <div className="flex items-center justify-center">
                   <Image
                     src={emptyCartIcon}
-                    alt="Empty car icon"
+                    alt="Empty car image"
                     className="w-[202px] h-[156px] mb-3"
                   />
                 </div>
@@ -202,7 +202,10 @@ const CartSidebar: React.FC<CartSidebarProps> = ({ children }) => {
 
                       <div className="flex gap-2 items-center absolute top-3 right-3">
                         {/* <CiHeart className="text-white text-lg cursor-pointer" /> */}
-                        <WishlistButton gameId={item.id.toString()} showText={false} />
+                        <WishlistButton
+                          gameId={item.id.toString()}
+                          showText={false}
+                        />
                         <MdDeleteForever
                           className="text-white text-lg cursor-pointer"
                           onClick={() => handleRemoveItem(item.id)}
